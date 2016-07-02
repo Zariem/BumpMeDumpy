@@ -2,6 +2,8 @@ package application;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -46,6 +48,11 @@ public class Menu extends JFrame implements ActionListener {
 		JLabel label = new JLabel("We did it!! OMGZ! (V.0.1)");
 		label.setBounds(20, frameHeight-70, buttonWidth, 20);
 		add(label);
+		
+		ImageIcon icon = new ImageIcon((getClass().getResource("Startbild.jpg")));
+		JLabel pic = new JLabel(icon);
+		pic.setBounds(25, 20, 250, 300);
+		add(pic);
 	}
 	
 	@Override
