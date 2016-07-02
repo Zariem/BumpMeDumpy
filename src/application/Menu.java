@@ -75,7 +75,13 @@ public class Menu extends JFrame implements ActionListener {
 	}
 	
 	public void startGame() {
-		// bla
+		
+		// Spiel wieder über JFrame einfügen? 
+		JFrame window = new JFrame("BumpMeDumpy");
+		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		window.setSize(1000,600);
+		window.setVisible(true);
+		
 	}
 
 }
