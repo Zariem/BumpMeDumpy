@@ -135,7 +135,7 @@ public void bewegen(){
 	
 }
 
-private class ActionListen extends KeyAdapter{
+private class ActionListen extends KeyAdapter {
 	public ActionListen(){
 		
 	}

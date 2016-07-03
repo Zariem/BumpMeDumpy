@@ -13,6 +13,7 @@ public class GameMain {
 		mainMenu.setSize(windowWidth,windowHeight);
 		mainMenu.setLayout(null);
 		mainMenu.setVisible(true);
+		mainMenu.setResizable(false);
 	}
 
 }
