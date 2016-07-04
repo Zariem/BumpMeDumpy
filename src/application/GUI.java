@@ -27,7 +27,7 @@ int key;
 
 int nx,nx2;
 
-Block block1;
+StupidBlock block1;
 int coin_score;
 
 int char_y = 430;
@@ -57,7 +57,7 @@ public GUI(){
 	
 	addKeyListener(new ActionListen());
 	
-	block1 = new Block(100,300,100,100,Color.GREEN);
+	block1 = new StupidBlock(100,300,100,100,Color.GREEN);
 	
 	Sprung sprung = new Sprung();
 	
@@ -109,7 +109,7 @@ public void paint(Graphics g){
 	f2.drawString("Score", 10, 15);
 }
 
-private int getXBild() {
+private int getXBild() { // x coord of player
 	return X_Bild;
 }
 
@@ -135,7 +135,7 @@ public void bewegen(){
 	
 }
 
-private class ActionListen extends KeyAdapter {
+private class ActionListen extends KeyAdapter { // find out which key is pressed and do something
 	public ActionListen(){
 		
 	}

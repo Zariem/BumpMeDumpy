@@ -11,6 +11,7 @@ import javax.swing.JOptionPane;
 
 public class Menu extends JFrame implements ActionListener {
 
+	private static final long serialVersionUID = 1L;
 	private int buttonHeight = 40;
 	private int buttonWidth;
 
@@ -88,6 +89,7 @@ public class Menu extends JFrame implements ActionListener {
 		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		window.setSize(1000,600);
 		window.setVisible(true);
+		window.add(new Room());
 		
 	}
 

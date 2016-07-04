@@ -2,14 +2,14 @@ package application;
 
 import java.awt.Color;
 
-public class Block{
+public class StupidBlock{
 	
 	final int X, Y;
 	final int WIDTH, HEIGHT;
 	boolean coin = false;
 	final Color COLOR;
 	
-	public Block(int p_x, int p_y, int p_width, int p_height, Color p_color){
+	public StupidBlock(int p_x, int p_y, int p_width, int p_height, Color p_color){
 		X = p_x;
 		Y = p_y;
 		WIDTH = p_width;

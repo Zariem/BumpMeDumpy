@@ -8,9 +8,11 @@ public class Character extends GameObject {
 	//boolean inAir; // is the Character currently in the air?
 	
 	public Character(int x, int y, int objWidth, int objHeight, ImageIcon[] objIcons, int objTimesteps, int objSpeed) {
-		super(x, y, objWidth, objHeight, objIcons, objTimesteps, objSpeed);
+		super(x, y, objWidth, objHeight, objIcons, objTimesteps, objSpeed, false);
+		// note: characters are NOT solid
 	}
 
+	
 	
 	public void jump() {
 		// check if in air (or colliding from below!)
